@@ -95,4 +95,17 @@ public class Main {
 
         confirmarFin();
     }
+
+    public static void visualizarCaracter ()   {
+        sc.nextLine(); //Borrar el contenido
+        System.out.println("""
+        -- Escoger carácter -- \s
+        En que posición esta el carácter que quieres visualizar""");
+        int posicion = sc.nextInt();
+        char caracter = cadena.charAt(posicion - 1);
+
+        System.out.println("Carácter: " + caracter);
+        sc.nextLine(); //Borrar contenido
+        confirmarFin();
+    }
 }
