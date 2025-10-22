@@ -108,4 +108,14 @@ public class Main {
         sc.nextLine(); //Borrar contenido
         confirmarFin();
     }
+
+    public static void convertiranumero ()   {
+        System.out.println("-- Conversor de carácter --");
+
+        int numero = Integer.parseInt(cadena);
+        System.out.println("El numero es: " + numero);
+        sc.nextLine(); //Borrar contenido
+        confirmarFin();
+    }
+
 }
