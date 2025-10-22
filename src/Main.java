@@ -83,6 +83,16 @@ public class Main {
                 finalizar();
                 break;
         }
+    }
 
+    public static void solicitarCadena ()  {
+        sc.nextLine(); //Borrar el contenido
+        System.out.println("""
+        -- Cadena de Caracteres --\s
+        Escribe una cadena de caracteres""");
+        cadena = sc.nextLine();
+
+
+        confirmarFin();
     }
 }
