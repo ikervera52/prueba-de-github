@@ -118,4 +118,35 @@ public class Main {
         confirmarFin();
     }
 
+    public static void covertirafecha ()   {
+        System.out.println("-- Conversor de fecha --");
+
+        DateTimeFormatter formater = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        LocalDate fecha = LocalDate.parse(cadena, formater);
+
+        System.out.println(fecha);
+        confirmarFin();
+    }
+
+    public static void finalizar (){
+        System.out.println("-- Fin del programa --");
+    }
+
+    public static void confirmarFin()   {
+        String volver;
+        do {
+
+            System.out.println("Quieres volver al menu? (si/no)");
+            volver = sc.nextLine().toLowerCase();
+
+            if (volver.equals("si")){
+                opciones();
+            } else if(volver.equals("no")){
+                finalizar();
+            } else {
+                System.out.println("Opción no permitida");
+            }
+
+        }while(!volver.equals("si") && !volver.equals("no"));
+    }
 }
